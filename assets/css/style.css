@@ -33,6 +33,7 @@ h4{
 }
 h5{
     font-size: 18px;
+    
 }
 .btn{
     padding: 8px 26px;
@@ -44,6 +45,7 @@ h5{
 .primary-btn{
     background-color:var(--primaryColor) ;
     color:#ffff ;
+    border: none;
 }
 .outline-btn{
     color: var(--primaryColor);
@@ -81,36 +83,42 @@ header{
     display: flex;
     padding-top:30px ;
 }
-.right-sec{
+.hero-right{
     width: 50%;
 }
 .hero-left{
     width: 50%;
 }
+
 .hero-right p{
     color: var(--textColor);
     padding:20px 0px 20px 0px ;
     width: 70%;
 }
+.hero-left img{
+    width: 100%;
+}
+
 .submit-form{
     display: flex;
-    gap:20px
+    gap:10px;
+    padding: 20px 0px;
 }
-.submit-form .form {
-    height: 40px;
-    width: 300px;
+.submit-form input[type="text"]{
+    width: 50%;
     background-color: #ffff;
-    padding: 10px;
-    font-size: 14px;
+    border: none;
 }
 /* .sponsor{
+    width: 70%;
     display: flex;
-    gap:10px;
+    gap: 10px;
 } */
 .sponsor img{
-    padding: 0px 10px;
+   padding-right: 10px;
     height: 20px;
     width: 90px;
+  
 }
 
 .feature{
@@ -155,16 +163,22 @@ header{
 }
 .left-agency{
   width: 50%;
-  padding-left: 50px;
-  align-items: center;
 }
+.right-agency{
+    width: 50%;
+}
+
+/* .left-agency-content{
+    padding-left: 50px;
+  align-items: center;
+} */
 .left-agency h2{
     padding: 20px 0px;
 }
 .left-agency p{
     padding-bottom: 20px;
 }
-.left-agency a{
+/* .left-agency a{
     color: var(--headingColor);
 }
 
@@ -172,4 +186,40 @@ header{
     color: var(--headingColor);
     font-size: 14px;
     padding: 0px 5px;
+} */
+.icon a{
+    color: var(--primaryColor);
+    font-size: 18px;
+    font-weight: 500;
+}
+.icon a:hover{
+    color:var(--headingColor);
+}
+
+.tutorial-sec{
+    padding: 80px 0px;
+}
+.tutorial-heading{
+    padding: 90px 0px;
+    text-align: center;
+}
+.tutorial-heading h5{
+    color: var(--primaryColor);
+    padding: 10px 0px;
+    font-weight: 700;
+}
+.tutorial-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.tutorial-box{
+    width: 30%;
+}
+.tutorial-box img{
+    width: 100%;
+}
+.tutorial-box P{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
 }
